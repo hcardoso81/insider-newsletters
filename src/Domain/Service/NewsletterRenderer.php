@@ -131,7 +131,7 @@ final class NewsletterRenderer
                         </td>
                         <td class="two-column-cell section-padding" width="50%" valign="top" style="padding-left: 10px; padding-right: 10px;">
                             <a class="link-reset" href="<?php echo esc_url(get_permalink($post->ID)); ?>" style="text-decoration: none;">
-                                <h2 class="title-primary h1-mobile" style="margin-top: 0; color:#604c8d;font-size: 1.5em; font-family: Helvetica, Arial, sans-serif;"><?php echo wp_kses_post($this->getTitleForNewsletter($post->ID, $post->post_title, $specialDataActive)); ?></h2>
+                                <h2 class="title-primary h1-mobile" style="margin: 0 0 10px; color:#604c8d; font-size: 24px; line-height: 29px; font-weight: 700; font-family: Helvetica, Arial, sans-serif;"><?php echo wp_kses_post($this->getTitleForNewsletter($post->ID, $post->post_title, $specialDataActive)); ?></h2>
                             </a>
                             <p class="text-base text-mobile" style="color: #58595b; font-family: Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; margin: 10px 0;">
                                 <?php echo wp_kses_post($this->getExtractForNewsletter($post->ID, $this->getExcerptMaxLength($post->ID, 240), $specialDataActive)); ?>
@@ -159,7 +159,7 @@ final class NewsletterRenderer
                         </td>
                         <td class="two-column-cell section-padding" width="50%" valign="top" style="padding-left: 10px; padding-right: 10px;">
                             <a class="link-reset" href="<?php echo esc_url(get_permalink($post->ID)); ?>" style="text-decoration: none;">
-                                <h2 class="title-secondary h2-mobile" style="margin-top: 0; color:#604c8d; font-size: 1.3em; font-family: Helvetica, Arial, sans-serif;"><?php echo wp_kses_post($this->getTitleForNewsletter($post->ID, $post->post_title, $specialDataActive)); ?></h2>
+                                <h2 class="title-secondary h2-mobile" style="margin: 0 0 8px; color:#604c8d; font-size: 20px; line-height: 25px; font-weight: 700; font-family: Helvetica, Arial, sans-serif;"><?php echo wp_kses_post($this->getTitleForNewsletter($post->ID, $post->post_title, $specialDataActive)); ?></h2>
                             </a>
                         </td>
                     </tr>

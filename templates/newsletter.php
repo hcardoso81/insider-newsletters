@@ -87,15 +87,19 @@ $preheaderText = mb_substr(trim(wp_strip_all_tags((string) $description)), 0, 14
             line-height: 20px;
         }
         .title-primary {
-            margin-top: 0;
+            margin: 0 0 10px;
             color: #604c8d;
-            font-size: 1.5em;
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 700;
             font-family: Helvetica, Arial, sans-serif;
         }
         .title-secondary {
-            margin-top: 0;
+            margin: 0 0 8px;
             color: #604c8d;
-            font-size: 1.3em;
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: 700;
             font-family: Helvetica, Arial, sans-serif;
         }
         .link-reset {
@@ -157,14 +161,20 @@ $preheaderText = mb_substr(trim(wp_strip_all_tags((string) $description)), 0, 14
                 box-sizing: border-box !important;
             }
             .h1-mobile {
-                font-size: 1.2em !important;
+                font-size: 23px !important;
+                line-height: 28px !important;
+                font-weight: 700 !important;
+                margin-bottom: 10px !important;
             }
             .h2-mobile {
-                font-size: 1.1em !important;
+                font-size: 20px !important;
+                line-height: 25px !important;
+                font-weight: 700 !important;
+                margin-bottom: 8px !important;
             }
             .text-mobile {
-                font-size: 14px !important;
-                line-height: 18px !important;
+                font-size: 15px !important;
+                line-height: 21px !important;
             }
             .sidebar-hide {
                 display: none !important;
