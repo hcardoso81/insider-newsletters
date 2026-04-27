@@ -11,6 +11,7 @@ use InsiderLatam\Newsletter\Infrastructure\WordPress\PostTypeRegistrar;
 use InsiderLatam\Newsletter\UI\Admin\AdminAssets;
 use InsiderLatam\Newsletter\UI\Admin\AdminColumns;
 use InsiderLatam\Newsletter\UI\Admin\ExportAction;
+use InsiderLatam\Newsletter\UI\Admin\OembedCacheGuard;
 use InsiderLatam\Newsletter\UI\Admin\RelationshipFieldQuery;
 use InsiderLatam\Newsletter\UI\Frontend\SingleTemplateLoader;
 
@@ -29,6 +30,7 @@ final class Plugin
         (new RelationshipFieldQuery())->registerHooks();
         (new AdminAssets())->registerHooks();
         (new AdminColumns())->registerHooks();
+        (new OembedCacheGuard())->registerHooks();
         (new ExportAction($renderer, $logger))->registerHooks();
         (new SingleTemplateLoader($renderer))->registerHooks();
     }

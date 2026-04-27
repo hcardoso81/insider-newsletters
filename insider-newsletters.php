@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Insider Newsletters
  * Description: Centraliza la gestion de newsletters y banners con exportacion HTML.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Hernan Cardoso
  * Author URI: https://www.linkedin.com/in/cardosohernan/
  * Text Domain: insider-newsletters
@@ -14,7 +14,7 @@ if (! defined('ABSPATH')) {
     exit;
 }
 
-define('INSIDER_NEWSLETTERS_VERSION', '1.0.0');
+define('INSIDER_NEWSLETTERS_VERSION', '1.0.1');
 define('INSIDER_NEWSLETTERS_FILE', __FILE__);
 define('INSIDER_NEWSLETTERS_PATH', plugin_dir_path(__FILE__));
 define('INSIDER_NEWSLETTERS_URL', plugin_dir_url(__FILE__));
