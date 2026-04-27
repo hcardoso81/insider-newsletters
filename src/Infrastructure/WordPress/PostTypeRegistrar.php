@@ -29,9 +29,9 @@ final class PostTypeRegistrar
             'hierarchical' => false,
             'menu_position' => null,
             'menu_icon' => 'dashicons-email-alt',
-            'supports' => ['title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments'],
+            'supports' => ['title', 'author', 'thumbnail', 'excerpt', 'comments'],
             'taxonomies' => ['category', 'post_tag'],
-            'show_in_rest' => true,
+            'show_in_rest' => false,
         ]);
 
         register_post_type(PostType::BANNER_VERTICAL, [
@@ -48,9 +48,9 @@ final class PostTypeRegistrar
             'hierarchical' => false,
             'menu_position' => null,
             'menu_icon' => 'dashicons-align-right',
-            'supports' => ['title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments'],
+            'supports' => ['title', 'author', 'thumbnail', 'excerpt', 'comments'],
             'taxonomies' => ['category', 'post_tag'],
-            'show_in_rest' => true,
+            'show_in_rest' => false,
         ]);
 
         register_post_type(PostType::BANNER_HORIZONTAL, [
@@ -67,9 +67,9 @@ final class PostTypeRegistrar
             'hierarchical' => false,
             'menu_position' => null,
             'menu_icon' => 'dashicons-align-wide',
-            'supports' => ['title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments'],
+            'supports' => ['title', 'author', 'thumbnail', 'excerpt', 'comments'],
             'taxonomies' => ['category', 'post_tag'],
-            'show_in_rest' => true,
+            'show_in_rest' => false,
         ]);
     }
 
