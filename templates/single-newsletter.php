@@ -13,8 +13,6 @@ if (! $postId) {
     exit;
 }
 
-nocache_headers();
-
 $logger = new \InsiderLatam\Newsletter\Infrastructure\Logging\ErrorLogger();
 $logger->ensureLogDirectory();
 
